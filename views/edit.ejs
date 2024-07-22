@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" bg-zinc-700">
+    <div class="w-full h-full bg-zinc-700 p-[20px_25px] text-white">
+        <div>
+            <p class="font-lite">Update Post here</p>
+            <form action="/update/<%= post._id %>" method="post" class="mt-8">
+                <textarea name="content" class="w-1/4 resize-none bg-zinc-600 block pl-2"
+                    placeholder="What's in your mind_?" required><%= post.content %></textarea>
+                <input type="submit"
+                    class="bg-blue-500 font-light mt-4 text-white pointer p-[6px_25px_8px] h-[fit-content]"
+                    value="Create Post">
+            </form>
+        </div>
+
+    </div>
+</body>
+
+</html>
