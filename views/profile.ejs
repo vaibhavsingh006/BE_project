@@ -11,6 +11,10 @@
 <body class=" bg-zinc-700">
     <div class="w-full h-full bg-zinc-700 p-[20px_25px] text-white">
         <div class=" flex justify-between">
+            <div class="w-[50px] h-[50px] rounded">
+                <a href="/profile/upload"><img class="h-full w-full object-cover rounded"
+                        src="/images/uploads/<%= user.profilepic %>" alt="img"></a>
+            </div>
             <h1 class="text-2xl text-white font-bold mb-4">Hello, <%= user.name %> 🙋‍♂️</h1>
             <a href="/logout" class="bg-red-500 font-bold text-white p-[8px_15px_10px] h-[fit-content]">Logout</a>
         </div>
